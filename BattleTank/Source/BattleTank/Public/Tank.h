@@ -18,6 +18,9 @@ public:
 	ATank();
 	void AimAt(FVector HitLocation);
 
+	UFUNCTION(BluePrintCallable, Category = Setup)
+		void SetBarrelRefrence(UStaticMeshComponent* BarrelToSet);
+
 
 protected:
 	// Called when the game starts or when spawned
